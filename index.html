@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <div class="calculator__header">
+      <p class="eyebrow">Everyday tool</p>
+      <h1>Calculator</h1>
+    </div>
+
+    <div class="display" aria-live="polite" aria-atomic="true">
+      <span id="display">0</span>
+    </div>
+
+    <div class="buttons">
+      <button class="button button--utility" type="button" data-action="clear">Clear</button>
+      <button class="button button--operator" type="button" data-action="percent" aria-label="Percent">%</button>
+      <button class="button button--operator" type="button" data-operator="÷" aria-label="Divide">÷</button>
+      <button class="button button--operator" type="button" data-operator="×" aria-label="Multiply">×</button>
+      <button class="button button--operator" type="button" data-operator="-" aria-label="Subtract">−</button>
+
+      <button class="button" type="button" data-number="7">7</button>
+      <button class="button" type="button" data-number="8">8</button>
+      <button class="button" type="button" data-number="9">9</button>
+      <button class="button button--operator" type="button" data-operator="+" aria-label="Add">+</button>
+
+      <button class="button" type="button" data-number="4">4</button>
+      <button class="button" type="button" data-number="5">5</button>
+      <button class="button" type="button" data-number="6">6</button>
+      <button class="button button--equals" type="button" data-action="equals">=</button>
+
+      <button class="button" type="button" data-number="1">1</button>
+      <button class="button" type="button" data-number="2">2</button>
+      <button class="button" type="button" data-number="3">3</button>
+
+      <button class="button button--zero" type="button" data-number="0">0</button>
+      <button class="button" type="button" data-action="decimal" aria-label="Decimal point">.</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
